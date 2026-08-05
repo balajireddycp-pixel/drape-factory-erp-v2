@@ -28,6 +28,8 @@ export const NAV_ITEMS = [
   { label: "Orders", path: "/orders", icon: ShoppingCart, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.SALES] },
   { label: "Production", path: "/production", icon: Factory, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.PRODUCTION] },
   { label: "Dispatch", path: "/dispatch", icon: Truck, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.DISPATCH] },
+  { label: "Inventory", path: "/inventory", icon: Boxes, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.PRODUCTION] },
+  { label: "Customer Fabric", path: "/customer-fabric", icon: Scissors, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.PRODUCTION] },
   { label: "Finance", path: "/finance", icon: Wallet, roles: [ROLES.ADMIN, ROLES.MANAGER, ROLES.ACCOUNTS] },
   { label: "Reports", path: "/reports", icon: BarChart3, roles: [ROLES.ADMIN, ROLES.MANAGER] },
   { label: "Settings", path: "/settings", icon: Settings, roles: [ROLES.ADMIN] },
@@ -64,3 +66,9 @@ export const PRODUCTION_STAGES = [
 ];
 
 export const PRIORITIES = ["Low", "Normal", "High", "Urgent"];
+
+// --- Orders module option lists ---
+export const PRODUCT_TYPES = ["Curtain", "Sheer", "Roman Blind", "Roller Blind", "Venetian Blind", "Upholstery"];
+export const STITCHING_TYPES = ["Eyelet", "Pinch Pleat", "Pencil Pleat", "Tab Top", "Rod Pocket", "Plain"];
+export const LINING_OPTIONS = ["None", "Standard", "Dim-out", "Blackout"];
+export const HARDWARE_OPTIONS = ["Track", "Rod", "Motorized Track", "Rings & Hooks", "Rail"];

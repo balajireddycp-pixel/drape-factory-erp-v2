@@ -5,8 +5,10 @@ import { useUIStore } from "@/store/uiStore";
 import { useAuth } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 
-function isVisible() {
-  return true;
+function isVisible(item, role) {
+  if (item.roles === "all") return true;
+  if (!role) return false;
+  return item.roles.includes(role);
 }
 
 export function Sidebar() {
