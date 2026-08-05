@@ -4,12 +4,13 @@ import { AuthLayout } from "@/layouts/AuthLayout";
 import { ProtectedRoute } from "@/components/auth/ProtectedRoute";
 import Login from "@/pages/auth/Login";
 import Dashboard from "@/pages/dashboard/Dashboard";
+import CustomerMaster from "@/pages/customers/CustomerMaster";
 
 /**
- * Foundation routing only. Each future module (Customers, Orders, Production,
- * Dispatch, Inventory, Customer Fabric, Finance, Reports, Settings) will add
- * its own <Route> block here, plus its own service/pages folders — built and
- * reviewed one module at a time per the project workflow.
+ * Each module (Customers, Orders, Production, Dispatch, Inventory,
+ * Customer Fabric, Finance, Reports, Settings) adds its own <Route> block
+ * here, plus its own service/pages folders — built and reviewed one module
+ * at a time per the project workflow. Customer Master is the first one in.
  */
 export function AppRoutes() {
   return (
@@ -26,6 +27,7 @@ export function AppRoutes() {
         }
       >
         <Route path="/" element={<Dashboard />} />
+        <Route path="/customers" element={<CustomerMaster />} />
       </Route>
     </Routes>
   );
